@@ -203,7 +203,7 @@ showResults (kata16())
 function kata17() {
     let number = []
     let menor = sampleArray[0]
-    for (let i = 0; i < sampleArray.length; i++) {
+    for (let i = 1; i < sampleArray.length; i++) {
         if (sampleArray[i] < menor) {
             menor = sampleArray[i]
             number.push(sampleArray[i])
@@ -218,14 +218,14 @@ showResults (kata17())
 
 function kata18() {
     let number = []
-    let maior = 0
-    for (let i = 0; i < sampleArray.length; i++) {
+    let maior = sampleArray[0]
+    for (let i = 1; i < sampleArray.length; i++) {
         if (sampleArray[i] > maior) {
             maior = sampleArray[i]
             number.push(sampleArray[i])
         }
-}
-return maior
+    }
+    return maior
 }
 showResults (kata18())
 
